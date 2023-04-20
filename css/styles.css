@@ -6,17 +6,56 @@
     box-sizing: border-box;
 }
 
+/** GENERAL */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 header{
     background-color: #0084fd;
     height: 76px;
+}
+
+h2{
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 3rem 0 2rem;
+}
+
+h3{
+    font-size: 1.45rem;
+    color: #0084fd;
+    margin: 2.3rem 2rem .8rem;
 }
 
 section:nth-last-of-type(odd){
     background-color: #9792e4;
 }
 
+.cards,
+.strategy,
+.benefits,
+.testimonials{
+    padding: 3rem 0;
+    gap: 2rem;
+}
+
+button{
+    color: #ffffff;
+    border:none;
+    background-color: #0084fd;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    padding: .75rem 3rem;
+    border-radius: 30px;
+    margin: .9rem 2rem 2rem;
+}
+
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .container{
@@ -25,6 +64,10 @@ section:nth-last-of-type(odd){
     justify-content: space-between;
     align-items: center;
 }
+
+/*############################################################
+                           NAV 
+#############################################################*/
 
 .menu-icon{
     color: #ffffff;
@@ -35,16 +78,36 @@ section:nth-last-of-type(odd){
     display: none;
 }
 
+/*############################################################
+                           CARDS
+#############################################################*/
+#cards p{
+    font-size: .9rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+    color: #5a6e7f;
+    margin: .9rem 2rem 1.5rem;
+}
+
+.card i{
+    margin: 2rem 0 0;
+}
+
 .big-card,
 .card{
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: #b5ddff;
+
+}
+
+.card{
+    text-align: center;
 }
 
 .big-card i,
 .card i{
     color: #0084fd;
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .big-card button i,
@@ -53,14 +116,40 @@ section:nth-last-of-type(odd){
     font-size: 1rem;
 }
 
-.big-card img{
-    width: 90%;
+#cards img{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#testimonials img,
+#strategy img,
+#about-us img{
+    width: 100%;
 }
 
 
 
 @media screen and (min-width: 480px) {
+    .big-card{
+        width: calc((100% / 3) * 2);
+    }
 
+    .card{
+        width: calc(100% / 3) ;
+    }
 }
 
 
