@@ -5,3 +5,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    background-color: #0084fd;
+    height: 76px;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 83%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.menu{
+    display: none;
+}
+
+.big-card,
+.card{
+    background-color: #b5ddff;
+}
+
+
+
+@media screen and (min-width: 480px) {
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 1140px;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+    }
+}
