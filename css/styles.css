@@ -11,6 +11,10 @@ header{
     height: 76px;
 }
 
+section:nth-last-of-type(odd){
+    background-color: #9792e4;
+}
+
 .flex{
     display: flex;
 }
@@ -33,7 +37,24 @@ header{
 
 .big-card,
 .card{
+    border-radius: 30px;
     background-color: #b5ddff;
+}
+
+.big-card i,
+.card i{
+    color: #0084fd;
+    font-size: 3rem;
+}
+
+.big-card button i,
+#about-us button i{
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.big-card img{
+    width: 90%;
 }
 
 
