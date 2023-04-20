@@ -66,7 +66,7 @@ button{
 }
 
 /*############################################################
-                           NAV 
+NAV 
 #############################################################*/
 
 .menu-icon{
@@ -79,7 +79,7 @@ button{
 }
 
 /*############################################################
-                           CARDS
+CARDS
 #############################################################*/
 #cards p{
     font-size: .9rem;
@@ -121,26 +121,63 @@ button{
     margin: 0 auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#testimonials img,
-#strategy img,
-#about-us img{
-    width: 100%;
+/* TESTIMONIALS */
+.testimony{
+    background-color: #9792e4;
+    border-radius: 50px;
+    text-align: center;
+    padding: 2.5rem .5rem;
+    color:#b5ddff
 }
 
 
+.circular-img {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%; 
+} 
+
+.circular-img img {
+    width: 100%;
+    scale: 160%;
+    margin-top: 40px;
+}
+
+/* BENEFITS */
+.benefit-cards{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+}
+
+.benefit-number,
+.benefit-title{
+    color:#9792e4;
+    font-weight: 600;
+}
+
+.benefit-number{
+    font-size: 3.5rem;
+}
+
+.benefit-title{
+    font-size: 1.5rem;
+}
+
+.benefit-description{
+    font-size: .9rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+    color: #5a6e7f;
+    margin: 1.5rem 0;
+}
+
+.benefit-button{
+    background-color: #9792e4;
+}
 
 @media screen and (min-width: 480px) {
     .big-card{
