@@ -31,6 +31,7 @@ h1{
 h2{
     font-size: 2.2rem;
     color: #ffffff;
+    text-align: center;
 }
 
 h3{
@@ -319,6 +320,7 @@ ABOUT US
     font-size: 1.8rem;
     color: #9792e4;
     margin: 1.5rem 0;
+    text-align: left;
 }
 
 .about-us button{
@@ -330,33 +332,101 @@ ABOUT US
 /*############################################################
 GET STARTED
 #############################################################*/
+.get-started{
+    padding: 4rem 0;
+    text-align: center;
+}
 
+.get-started .subtitle{
+    color: #ffffff;
+}
 
+.get-started h2{
+    margin: 1rem 0 2rem;
+}
+
+.free{
+    font-size: 5rem;
+    color: #fdc15f;
+    line-height: 5rem;
+}
+
+.get-started-text{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 1.5rem 0;
+}
+
+.get-started button{
+    color: #9792e4;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    padding: 1rem 4rem;
+}
+
+.copyright{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 1.5rem
+}
+
+.copyright a{
+    color: #ffffff;
+}
 
 /*############################################################
 FOOTER
 #############################################################*/
-.footer-text,
-.copyright{
+.footer-text{
     font-weight: 400;
     font-size: .9rem;
-    padding: 2rem 0;
+    padding: 2rem 0 1rem;
     text-align: center;
 }
 
-.copyright a{
+.footer-text a{
     color: #9792e4;
-
 }
 
 
 @media screen and (min-width: 480px) {
+    .cards,
+    .strategy,
+    .benefits,
+    .testimonials{
+        gap: 0rem;
+    }
 
+.flex{
+    align-items: stretch;
+}
+
+.container{
+    width: 90%;
+}
+
+.big-card{
+    width: calc((100% / 3) * 2 - 2rem);
+}
+
+.demo-img{
+    width: 60%;
+}
+
+.small-card{
+    
+    width: calc(( 100% / 3 ) - 2rem);
 }
 
 
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .container{
         max-width: 1140px;
     }
