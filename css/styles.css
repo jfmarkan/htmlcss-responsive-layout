@@ -23,15 +23,20 @@ header{
     height: 76px;
 }
 
-h3{
-    font-size: 1.45rem;
-    color: #0084fd;
-    margin: 1.6rem 0;
+h1{
+    color: #9792e4;
+    font-size: 3rem;
 }
 
 h2{
     font-size: 2.2rem;
     color: #ffffff;
+}
+
+h3{
+    font-size: 1.45rem;
+    color: #0084fd;
+    margin: 1.6rem 0;
 }
 
 section:nth-last-of-type(odd){
@@ -74,6 +79,10 @@ p{
     line-height: 1.7rem;
     font-weight: 700;
     color: #ffffff
+}
+
+footer{
+    background-color: #333333;
 }
 
 /*############################################################
@@ -182,7 +191,10 @@ STRATEGY
     margin-top: 2rem;
 }
 
-/* TESTIMONIALS */
+/*############################################################
+TESTIMONIALS
+#############################################################*/
+
 .testimonials{
     justify-content: center;
 }
@@ -246,7 +258,13 @@ STRATEGY
     margin-top: 40px;
 }
 
-/* BENEFITS */
+/*############################################################
+BENEFITS
+#############################################################*/
+.benefits h2{
+    text-align: center;
+}
+
 .benefit-cards{
     background-color: #ffffff;
     border-radius: 20px;
@@ -269,7 +287,7 @@ STRATEGY
 }
 
 .benefit-description{
-    font-size: .9rem;
+    font-size: 1rem;
     line-height: 1.7rem;
     font-weight: 500;
     color: #5a6e7f;
@@ -283,10 +301,54 @@ STRATEGY
     padding: .75rem 3rem;
 }
 
-/* ABOUT US */
+/*############################################################
+ABOUT US
+#############################################################*/
+.about-us{
+    padding: 5rem 0 4rem;
+}
 .about-us-text{
     color: #111111;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 1rem 0 2rem;
 }
+
+.about-us h2{
+    font-size: 1.8rem;
+    color: #9792e4;
+    margin: 1.5rem 0;
+}
+
+.about-us button{
+    background-color: #9792e4;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+}
+
+/*############################################################
+GET STARTED
+#############################################################*/
+
+
+
+/*############################################################
+FOOTER
+#############################################################*/
+.footer-text,
+.copyright{
+    font-weight: 400;
+    font-size: .9rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.copyright a{
+    color: #9792e4;
+
+}
+
 
 @media screen and (min-width: 480px) {
 
