@@ -261,11 +261,11 @@ STRATEGY
 
 .benefit-number{
     font-size: 3.5rem;
-    margin-bottom: 1rem;
 }
 
 .benefit-title{
     font-size: 1.5rem;
+    margin: 3rem 0 1.5rem;
 }
 
 .benefit-description{
@@ -278,6 +278,9 @@ STRATEGY
 
 .benefit-button{
     background-color: #9792e4;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    padding: .75rem 3rem;
 }
 
 /* ABOUT US */
