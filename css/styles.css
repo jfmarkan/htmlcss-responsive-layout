@@ -18,6 +18,11 @@ li{
     margin: 0 1rem;
 }
 
+li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 header{
     background-color: #0084fd;
     height: 76px;
@@ -86,7 +91,7 @@ footer{
     background-color: #333333;
 }
 
-/*############################################################
+/*#############################################################
 NAV 
 #############################################################*/
 
@@ -107,7 +112,7 @@ NAV
     margin-left: .5rem;
 }
 
-/*############################################################
+/*#############################################################
 CARDS
 #############################################################*/
 .big-card{
@@ -152,7 +157,7 @@ CARDS
     margin: 0 auto;
 }
 
-/*############################################################
+/*#############################################################
 STRATEGY
 #############################################################*/
 
@@ -192,7 +197,7 @@ STRATEGY
     margin-top: 2rem;
 }
 
-/*############################################################
+/*#############################################################
 TESTIMONIALS
 #############################################################*/
 
@@ -247,9 +252,8 @@ TESTIMONIALS
     font-size: 3rem;
 }
 
-.testimony-text .enormous-text-open{    
+.enormous-text-open{    
     line-height: 0;
-
     margin-left: -1.75rem;
     transform: rotate(180deg);
 }
@@ -274,7 +278,7 @@ TESTIMONIALS
     object-fit: cover;
 }
 
-/*############################################################
+/*#############################################################
 BENEFITS
 #############################################################*/
 .benefits h2{
@@ -317,12 +321,13 @@ BENEFITS
     padding: .75rem 3rem;
 }
 
-/*############################################################
+/*#############################################################
 ABOUT US
 #############################################################*/
 .about-us{
     padding: 5rem 0 4rem;
 }
+
 .about-us-text{
     color: #111111;
     font-weight: 400;
@@ -344,7 +349,19 @@ ABOUT US
     padding: .5rem 1rem;
 }
 
-/*############################################################
+.col-w-220{
+    width: 100%;
+}
+
+.about-us .enormous-text-open{
+    position: absolute;
+    color: #9792e4;
+    font-size: 10rem;
+    line-height: 0;
+    right: 0;
+}
+
+/*#############################################################
 GET STARTED
 #############################################################*/
 .get-started{
@@ -400,9 +417,7 @@ footer .container,
     align-items: center;
 }
 
-
-
-/*############################################################
+/*#############################################################
 FOOTER
 #############################################################*/
 .footer-text{
@@ -468,6 +483,21 @@ FOOTER
     text-align: left;
 }
 
+.testimony{
+    padding: 1rem;
+}
+
+.testimony .testimony-text,
+.testimony .names{
+    margin: 1rem 0;
+}
+
+.testimony .col-w-70{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .benefit-cards{
     width: calc((100% / 2) - 1.5rem);
 }
@@ -478,6 +508,10 @@ FOOTER
 
 .about-us .col-w-30{
     width: 35%;
+}
+
+.col-w-220{
+    width: 220px;
 }
 
 .get-started-text{
@@ -497,6 +531,10 @@ footer .container,
 .get-started button{
     min-width: 260px;
     max-width: 40%;
+}
+
+.about-us .circular-img{
+    position: relative;
 }
 
 }
@@ -551,10 +589,6 @@ footer .container,
         margin: .5rem 0;
     }
 
-    .testimony{
-        padding: 1rem;
-    }
-
     .benefits h2{
         width: 100%;
         padding-bottom: 2rem;
@@ -563,4 +597,17 @@ footer .container,
     .benefit-cards{
         width: calc((100% / 3) - 1rem);
     }
+}
+
+.about-us .col-w-70{
+    width: 60%;
+}
+
+.about-us .col-w-30{
+    width: 30%;
+    justify-content: end;
+}
+
+.col-w-220{
+    width: 220px;
 }
