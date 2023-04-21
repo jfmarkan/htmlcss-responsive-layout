@@ -21,6 +21,7 @@ li{
 header{
     background-color: #0084fd;
     height: 76px;
+    align-items: center;
 }
 
 h1{
@@ -68,7 +69,6 @@ button{
     width: 83%;
     margin: 0 auto;
     justify-content: space-between;
-    align-items: center;
 }
 
 img{
@@ -223,7 +223,8 @@ TESTIMONIALS
     border-radius: 50px;
     text-align: center;
     padding: 2.5rem 1.2rem 1rem;
-    color:#b5ddff
+    color:#b5ddff;
+    justify-content: center;
 }
 
 .enormous-text-open{
@@ -246,12 +247,14 @@ TESTIMONIALS
 
 .circular-img {
     display: inline-block;
-    position: relative;
+
     width: 200px;
     height: 200px;
     overflow: hidden;
     border-radius: 50%; 
 } 
+
+
 
 .circular-img img {
     width: 100%;
@@ -379,6 +382,14 @@ GET STARTED
     color: #ffffff;
 }
 
+footer .container,
+.get-started{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 /*############################################################
 FOOTER
 #############################################################*/
@@ -395,38 +406,90 @@ FOOTER
 
 
 @media screen and (min-width: 480px) {
-    .cards,
-    .strategy,
-    .benefits,
-    .testimonials{
-        gap: 0rem;
-    }
-
-.flex{
-    align-items: stretch;
-}
-
 .container{
     width: 90%;
 }
 
 .big-card{
-    width: calc((100% / 3) * 2 - 2rem);
+    width: calc((100% / 3) * 2 - .5rem);
+    justify-content: flex-start;
 }
 
-.demo-img{
+.big-card img{
     width: 60%;
+    margin:0;
 }
 
 .small-card{
-    
-    width: calc(( 100% / 3 ) - 2rem);
+    width: calc(( 100% / 3 ) - 1rem);
 }
 
+.planning h2{
+    font-size: 4rem;
+}
+
+.testimonials{
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimony{
+    flex-wrap: wrap;
+}
+
+.testimony-text{
+    text-align: left;
+    padding: 0 2rem;
+    line-height: 2rem;
+}
+
+.names{
+    padding: 0 2rem;
+}
+
+.testimony .col-w-30{
+    width: 200px;
+}
+
+.col-w-70{
+    width: calc(100% - 220px);
+    text-align: left;
+}
+
+.benefit-cards{
+    width: calc((100% / 2) - 1.5rem);
+}
+
+.about-us .col-w-70{
+    width: 50%;
+}
+
+.about-us .col-w-30{
+    width: 35%;
+}
+
+.get-started-text{
+    width: 70%;
+}
+
+.footer-text{
+    width: 55%;
+}
+
+footer .container,
+.get-started{
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-started button{
+    min-width: 260px;
+    max-width: 40%;
+}
 
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .container{
         max-width: 1140px;
     }
@@ -440,19 +503,21 @@ FOOTER
     }
 
     .big-card{
-        width: calc((100% / 3) * 2);
-    }
-
-    .small-card{
-        width: calc(( 100% / 3 ) - 1.5rem);
+        width: calc((100% / 3) * 2 - .5rem);
     }
 
     .big-card .demo{
-        width: 60%;
+        width: 50%;
+        align-items: flex-start; 
     }
 
     .big-card .demo-img{
-        width: 30%;
+        width: 40%;
+        align-items: flex-end;
+    }
+
+    .demo-img img{
+        width: 100%;
     }
 
 
