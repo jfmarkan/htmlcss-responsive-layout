@@ -227,16 +227,38 @@ TESTIMONIALS
     justify-content: center;
 }
 
-.enormous-text-open{
+.testimony .col-w-70{
+    position: relative;
+    max-width: 90%;
+}
+
+.enormous-text-open,
+.enormous-text-close{    
+    position: absolute;
     font-family: 'BIZ UDMincho', serif;
     color: #ffffff;
     font-size: 3rem;
+    text-indent: 4rem;
 }
+
+.enormous-text-open{    
+    left: 5px;
+    top: -20px;
+    transform: rotate(180deg);
+}
+
+.enormous-text-close{    
+    right: 5px;
+    bottom: -10px;
+}
+
 
 .testimony-text{
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: 400;
+    text-indent: 1.5rem;
+    position: relative;
 }
 
 .names{
@@ -245,21 +267,11 @@ TESTIMONIALS
     text-transform: uppercase;
 }
 
-.circular-img {
-    display: inline-block;
-
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
+.circular-img img{
+    width: 210px;
+    height: 210px;
     border-radius: 50%; 
-} 
-
-
-
-.circular-img img {
-    width: 100%;
-    scale: 160%;
-    margin-top: 40px;
+    object-fit: cover;
 }
 
 /*############################################################
@@ -517,8 +529,38 @@ footer .container,
     }
 
     .demo-img img{
-        width: 100%;
+        width: 90%;
     }
 
+    .strategy{
+        justify-content: center;
+        align-items: flex-end;
+    }
 
+    .planning,
+    .developement{
+        width: 30%;
+    }
+    
+    .planning h2{
+        font-size: 2rem;
+    }
+
+    .developement h3,
+    .developement .trigger{
+        margin: .5rem 0;
+    }
+
+    .testimony{
+        padding: 1rem;
+    }
+
+    .benefits h2{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .benefit-cards{
+        width: calc((100% / 3) - 1rem);
+    }
 }
