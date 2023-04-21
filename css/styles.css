@@ -232,34 +232,34 @@ TESTIMONIALS
     max-width: 90%;
 }
 
+.testimony-text{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-indent: 1.5rem;
+}
+
 .enormous-text-open,
 .enormous-text-close{    
     position: absolute;
     font-family: 'BIZ UDMincho', serif;
     color: #ffffff;
     font-size: 3rem;
-    text-indent: 4rem;
 }
 
-.enormous-text-open{    
-    left: 5px;
-    top: -20px;
+.testimony-text .enormous-text-open{    
+    line-height: 0;
+
+    margin-left: -1.75rem;
     transform: rotate(180deg);
 }
 
 .enormous-text-close{    
-    right: 5px;
-    bottom: -10px;
+    line-height: 3rem;
+    text-indent: 0rem;
 }
 
 
-.testimony-text{
-    margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: 400;
-    text-indent: 1.5rem;
-    position: relative;
-}
 
 .names{
     font-size: 1.2rem;
